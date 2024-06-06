@@ -1,0 +1,44 @@
+@import './variables';
+
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+    }
+}
+  
+.controls {
+    margin: $primary-margin;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px 0;
+  
+    .search-bar {
+      flex: 1;
+      margin-right: 20px;
+    }
+  
+    .pagination {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+}
+
+@media (max-width: 600px) {
+    .controls {
+      flex-direction: column;
+      align-items: center;
+      margin: $primary-margin $primary-margin 0 $primary-margin;
+  
+      .searchBar,
+      .pagination {
+        flex: unset;
+        margin: 10px 0;
+      }
+    }
+}

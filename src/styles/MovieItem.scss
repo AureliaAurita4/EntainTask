@@ -1,0 +1,22 @@
+@import './variables';
+
+.movie-item {
+    margin-top: $primary-margin;
+    text-align: center;
+    background-color: #a2d5f2;
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .movie-item {
+        img {
+            height: 200px;
+        }
+    }
+}
